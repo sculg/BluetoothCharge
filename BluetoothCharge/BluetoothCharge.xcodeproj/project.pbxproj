@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		519B07841CE95EBA003AC710 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B07831CE95EBA003AC710 /* main.m */; };
+		519B07871CE95EBA003AC710 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B07861CE95EBA003AC710 /* AppDelegate.m */; };
+		519B078A1CE95EBA003AC710 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B07891CE95EBA003AC710 /* ViewController.m */; };
+		519B078D1CE95EBA003AC710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519B078B1CE95EBA003AC710 /* Main.storyboard */; };
+		519B078F1CE95EBA003AC710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 519B078E1CE95EBA003AC710 /* Assets.xcassets */; };
+		519B07921CE95EBA003AC710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 519B07901CE95EBA003AC710 /* LaunchScreen.storyboard */; };
+		519B079D1CE95EBA003AC710 /* BluetoothChargeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B079C1CE95EBA003AC710 /* BluetoothChargeTests.m */; };
+		519B07A81CE95EBA003AC710 /* BluetoothChargeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 519B07A71CE95EBA003AC710 /* BluetoothChargeUITests.m */; };
+		51A3F9721CEC42E600FAC754 /* BabyDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F9611CEC42E600FAC754 /* BabyDefine.m */; };
+		51A3F9731CEC42E600FAC754 /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F9631CEC42E600FAC754 /* BabyCentralManager.m */; };
+		51A3F9741CEC42E600FAC754 /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F9651CEC42E600FAC754 /* BabyPeripheralManager.m */; };
+		51A3F9751CEC42E600FAC754 /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F9671CEC42E600FAC754 /* BabyBluetooth.m */; };
+		51A3F9761CEC42E600FAC754 /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F9691CEC42E600FAC754 /* BabyCallback.m */; };
+		51A3F9771CEC42E600FAC754 /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F96B1CEC42E600FAC754 /* BabySpeaker.m */; };
+		51A3F9781CEC42E600FAC754 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F96D1CEC42E600FAC754 /* BabyToy.m */; };
+		51A3F9791CEC42E600FAC754 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F96F1CEC42E600FAC754 /* BabyRhythm.m */; };
+		51A3F97A1CEC42E600FAC754 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F9711CEC42E600FAC754 /* BabyOptions.m */; };
+		B185FF2CBC4AC0C67E376441 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC498B709627CF73406B91B4 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		519B07991CE95EBA003AC710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B07771CE95EBA003AC710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 519B077E1CE95EBA003AC710;
+			remoteInfo = BluetoothCharge;
+		};
+		519B07A41CE95EBA003AC710 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B07771CE95EBA003AC710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 519B077E1CE95EBA003AC710;
+			remoteInfo = BluetoothCharge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41AA6E93CC700F88CA966F9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		519B077F1CE95EBA003AC710 /* BluetoothCharge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothCharge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		519B07831CE95EBA003AC710 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		519B07851CE95EBA003AC710 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		519B07861CE95EBA003AC710 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		519B07881CE95EBA003AC710 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		519B07891CE95EBA003AC710 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		519B078C1CE95EBA003AC710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		519B078E1CE95EBA003AC710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		519B07911CE95EBA003AC710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		519B07931CE95EBA003AC710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		519B07981CE95EBA003AC710 /* BluetoothChargeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothChargeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		519B079C1CE95EBA003AC710 /* BluetoothChargeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothChargeTests.m; sourceTree = "<group>"; };
+		519B079E1CE95EBA003AC710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		519B07A31CE95EBA003AC710 /* BluetoothChargeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothChargeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		519B07A71CE95EBA003AC710 /* BluetoothChargeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothChargeUITests.m; sourceTree = "<group>"; };
+		519B07A91CE95EBA003AC710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51A3F9601CEC42E600FAC754 /* BabyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyDefine.h; sourceTree = "<group>"; };
+		51A3F9611CEC42E600FAC754 /* BabyDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyDefine.m; sourceTree = "<group>"; };
+		51A3F9621CEC42E600FAC754 /* BabyCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCentralManager.h; sourceTree = "<group>"; };
+		51A3F9631CEC42E600FAC754 /* BabyCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCentralManager.m; sourceTree = "<group>"; };
+		51A3F9641CEC42E600FAC754 /* BabyPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyPeripheralManager.h; sourceTree = "<group>"; };
+		51A3F9651CEC42E600FAC754 /* BabyPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyPeripheralManager.m; sourceTree = "<group>"; };
+		51A3F9661CEC42E600FAC754 /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
+		51A3F9671CEC42E600FAC754 /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
+		51A3F9681CEC42E600FAC754 /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
+		51A3F9691CEC42E600FAC754 /* BabyCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCallback.m; sourceTree = "<group>"; };
+		51A3F96A1CEC42E600FAC754 /* BabySpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabySpeaker.h; sourceTree = "<group>"; };
+		51A3F96B1CEC42E600FAC754 /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
+		51A3F96C1CEC42E600FAC754 /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
+		51A3F96D1CEC42E600FAC754 /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		51A3F96E1CEC42E600FAC754 /* BabyRhythm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyRhythm.h; sourceTree = "<group>"; };
+		51A3F96F1CEC42E600FAC754 /* BabyRhythm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRhythm.m; sourceTree = "<group>"; };
+		51A3F9701CEC42E600FAC754 /* BabyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyOptions.h; sourceTree = "<group>"; };
+		51A3F9711CEC42E600FAC754 /* BabyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyOptions.m; sourceTree = "<group>"; };
+		E0C5141E4F941827CD30262C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FC498B709627CF73406B91B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		519B077C1CE95EBA003AC710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B185FF2CBC4AC0C67E376441 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		519B07951CE95EBA003AC710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		519B07A01CE95EBA003AC710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25ACBD20AB2F4421C69F6EB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC498B709627CF73406B91B4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		519B07761CE95EBA003AC710 = {
+			isa = PBXGroup;
+			children = (
+				51A3F95F1CEC42C300FAC754 /* BabyBluetooth */,
+				51A3F95E1CEC3B3B00FAC754 /*  BluetoothProtocol */,
+				519B07811CE95EBA003AC710 /* BluetoothCharge */,
+				519B079B1CE95EBA003AC710 /* BluetoothChargeTests */,
+				519B07A61CE95EBA003AC710 /* BluetoothChargeUITests */,
+				519B07801CE95EBA003AC710 /* Products */,
+				ADE5749806F8A66D139E7AA3 /* Pods */,
+				25ACBD20AB2F4421C69F6EB4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		519B07801CE95EBA003AC710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				519B077F1CE95EBA003AC710 /* BluetoothCharge.app */,
+				519B07981CE95EBA003AC710 /* BluetoothChargeTests.xctest */,
+				519B07A31CE95EBA003AC710 /* BluetoothChargeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		519B07811CE95EBA003AC710 /* BluetoothCharge */ = {
+			isa = PBXGroup;
+			children = (
+				519B07851CE95EBA003AC710 /* AppDelegate.h */,
+				519B07861CE95EBA003AC710 /* AppDelegate.m */,
+				519B07881CE95EBA003AC710 /* ViewController.h */,
+				519B07891CE95EBA003AC710 /* ViewController.m */,
+				519B078B1CE95EBA003AC710 /* Main.storyboard */,
+				519B078E1CE95EBA003AC710 /* Assets.xcassets */,
+				519B07901CE95EBA003AC710 /* LaunchScreen.storyboard */,
+				519B07931CE95EBA003AC710 /* Info.plist */,
+				519B07821CE95EBA003AC710 /* Supporting Files */,
+			);
+			path = BluetoothCharge;
+			sourceTree = "<group>";
+		};
+		519B07821CE95EBA003AC710 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				519B07831CE95EBA003AC710 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		519B079B1CE95EBA003AC710 /* BluetoothChargeTests */ = {
+			isa = PBXGroup;
+			children = (
+				519B079C1CE95EBA003AC710 /* BluetoothChargeTests.m */,
+				519B079E1CE95EBA003AC710 /* Info.plist */,
+			);
+			path = BluetoothChargeTests;
+			sourceTree = "<group>";
+		};
+		519B07A61CE95EBA003AC710 /* BluetoothChargeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				519B07A71CE95EBA003AC710 /* BluetoothChargeUITests.m */,
+				519B07A91CE95EBA003AC710 /* Info.plist */,
+			);
+			path = BluetoothChargeUITests;
+			sourceTree = "<group>";
+		};
+		51A3F95E1CEC3B3B00FAC754 /*  BluetoothProtocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = " BluetoothProtocol";
+			sourceTree = "<group>";
+		};
+		51A3F95F1CEC42C300FAC754 /* BabyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				51A3F9601CEC42E600FAC754 /* BabyDefine.h */,
+				51A3F9611CEC42E600FAC754 /* BabyDefine.m */,
+				51A3F9621CEC42E600FAC754 /* BabyCentralManager.h */,
+				51A3F9631CEC42E600FAC754 /* BabyCentralManager.m */,
+				51A3F9641CEC42E600FAC754 /* BabyPeripheralManager.h */,
+				51A3F9651CEC42E600FAC754 /* BabyPeripheralManager.m */,
+				51A3F9661CEC42E600FAC754 /* BabyBluetooth.h */,
+				51A3F9671CEC42E600FAC754 /* BabyBluetooth.m */,
+				51A3F9681CEC42E600FAC754 /* BabyCallback.h */,
+				51A3F9691CEC42E600FAC754 /* BabyCallback.m */,
+				51A3F96A1CEC42E600FAC754 /* BabySpeaker.h */,
+				51A3F96B1CEC42E600FAC754 /* BabySpeaker.m */,
+				51A3F96C1CEC42E600FAC754 /* BabyToy.h */,
+				51A3F96D1CEC42E600FAC754 /* BabyToy.m */,
+				51A3F96E1CEC42E600FAC754 /* BabyRhythm.h */,
+				51A3F96F1CEC42E600FAC754 /* BabyRhythm.m */,
+				51A3F9701CEC42E600FAC754 /* BabyOptions.h */,
+				51A3F9711CEC42E600FAC754 /* BabyOptions.m */,
+			);
+			name = BabyBluetooth;
+			sourceTree = "<group>";
+		};
+		ADE5749806F8A66D139E7AA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41AA6E93CC700F88CA966F9E /* Pods.debug.xcconfig */,
+				E0C5141E4F941827CD30262C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		519B077E1CE95EBA003AC710 /* BluetoothCharge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 519B07AC1CE95EBA003AC710 /* Build configuration list for PBXNativeTarget "BluetoothCharge" */;
+			buildPhases = (
+				AFC4DB69772C961C428E39FD /* Check Pods Manifest.lock */,
+				519B077B1CE95EBA003AC710 /* Sources */,
+				519B077C1CE95EBA003AC710 /* Frameworks */,
+				519B077D1CE95EBA003AC710 /* Resources */,
+				14EB631ED1A84C54FD33078B /* Embed Pods Frameworks */,
+				1C183EA781E127B9F314864E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothCharge;
+			productName = BluetoothCharge;
+			productReference = 519B077F1CE95EBA003AC710 /* BluetoothCharge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		519B07971CE95EBA003AC710 /* BluetoothChargeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 519B07AF1CE95EBA003AC710 /* Build configuration list for PBXNativeTarget "BluetoothChargeTests" */;
+			buildPhases = (
+				519B07941CE95EBA003AC710 /* Sources */,
+				519B07951CE95EBA003AC710 /* Frameworks */,
+				519B07961CE95EBA003AC710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				519B079A1CE95EBA003AC710 /* PBXTargetDependency */,
+			);
+			name = BluetoothChargeTests;
+			productName = BluetoothChargeTests;
+			productReference = 519B07981CE95EBA003AC710 /* BluetoothChargeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		519B07A21CE95EBA003AC710 /* BluetoothChargeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 519B07B21CE95EBA003AC710 /* Build configuration list for PBXNativeTarget "BluetoothChargeUITests" */;
+			buildPhases = (
+				519B079F1CE95EBA003AC710 /* Sources */,
+				519B07A01CE95EBA003AC710 /* Frameworks */,
+				519B07A11CE95EBA003AC710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				519B07A51CE95EBA003AC710 /* PBXTargetDependency */,
+			);
+			name = BluetoothChargeUITests;
+			productName = BluetoothChargeUITests;
+			productReference = 519B07A31CE95EBA003AC710 /* BluetoothChargeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		519B07771CE95EBA003AC710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = clou;
+				TargetAttributes = {
+					519B077E1CE95EBA003AC710 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					519B07971CE95EBA003AC710 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 519B077E1CE95EBA003AC710;
+					};
+					519B07A21CE95EBA003AC710 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 519B077E1CE95EBA003AC710;
+					};
+				};
+			};
+			buildConfigurationList = 519B077A1CE95EBA003AC710 /* Build configuration list for PBXProject "BluetoothCharge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 519B07761CE95EBA003AC710;
+			productRefGroup = 519B07801CE95EBA003AC710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				519B077E1CE95EBA003AC710 /* BluetoothCharge */,
+				519B07971CE95EBA003AC710 /* BluetoothChargeTests */,
+				519B07A21CE95EBA003AC710 /* BluetoothChargeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		519B077D1CE95EBA003AC710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519B07921CE95EBA003AC710 /* LaunchScreen.storyboard in Resources */,
+				519B078F1CE95EBA003AC710 /* Assets.xcassets in Resources */,
+				519B078D1CE95EBA003AC710 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		519B07961CE95EBA003AC710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		519B07A11CE95EBA003AC710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14EB631ED1A84C54FD33078B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C183EA781E127B9F314864E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFC4DB69772C961C428E39FD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		519B077B1CE95EBA003AC710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51A3F9781CEC42E600FAC754 /* BabyToy.m in Sources */,
+				51A3F9721CEC42E600FAC754 /* BabyDefine.m in Sources */,
+				51A3F9741CEC42E600FAC754 /* BabyPeripheralManager.m in Sources */,
+				519B078A1CE95EBA003AC710 /* ViewController.m in Sources */,
+				51A3F9771CEC42E600FAC754 /* BabySpeaker.m in Sources */,
+				519B07871CE95EBA003AC710 /* AppDelegate.m in Sources */,
+				51A3F9761CEC42E600FAC754 /* BabyCallback.m in Sources */,
+				51A3F9751CEC42E600FAC754 /* BabyBluetooth.m in Sources */,
+				519B07841CE95EBA003AC710 /* main.m in Sources */,
+				51A3F9791CEC42E600FAC754 /* BabyRhythm.m in Sources */,
+				51A3F97A1CEC42E600FAC754 /* BabyOptions.m in Sources */,
+				51A3F9731CEC42E600FAC754 /* BabyCentralManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		519B07941CE95EBA003AC710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519B079D1CE95EBA003AC710 /* BluetoothChargeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		519B079F1CE95EBA003AC710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				519B07A81CE95EBA003AC710 /* BluetoothChargeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		519B079A1CE95EBA003AC710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 519B077E1CE95EBA003AC710 /* BluetoothCharge */;
+			targetProxy = 519B07991CE95EBA003AC710 /* PBXContainerItemProxy */;
+		};
+		519B07A51CE95EBA003AC710 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 519B077E1CE95EBA003AC710 /* BluetoothCharge */;
+			targetProxy = 519B07A41CE95EBA003AC710 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		519B078B1CE95EBA003AC710 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519B078C1CE95EBA003AC710 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		519B07901CE95EBA003AC710 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519B07911CE95EBA003AC710 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		519B07AA1CE95EBA003AC710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		519B07AB1CE95EBA003AC710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		519B07AD1CE95EBA003AC710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41AA6E93CC700F88CA966F9E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: weiwei zhou (KM28LGJ6L7)";
+				INFOPLIST_FILE = BluetoothCharge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clou.chargstation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a7d84a9b-b12a-44f7-99de-e6895f0f72e4";
+			};
+			name = Debug;
+		};
+		519B07AE1CE95EBA003AC710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0C5141E4F941827CD30262C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: weiwei zhou (KM28LGJ6L7)";
+				INFOPLIST_FILE = BluetoothCharge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clou.chargstation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a7d84a9b-b12a-44f7-99de-e6895f0f72e4";
+			};
+			name = Release;
+		};
+		519B07B01CE95EBA003AC710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BluetoothChargeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clou.BluetoothChargeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothCharge.app/BluetoothCharge";
+			};
+			name = Debug;
+		};
+		519B07B11CE95EBA003AC710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BluetoothChargeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clou.BluetoothChargeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BluetoothCharge.app/BluetoothCharge";
+			};
+			name = Release;
+		};
+		519B07B31CE95EBA003AC710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BluetoothChargeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clou.BluetoothChargeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BluetoothCharge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		519B07B41CE95EBA003AC710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BluetoothChargeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clou.BluetoothChargeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BluetoothCharge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		519B077A1CE95EBA003AC710 /* Build configuration list for PBXProject "BluetoothCharge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519B07AA1CE95EBA003AC710 /* Debug */,
+				519B07AB1CE95EBA003AC710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		519B07AC1CE95EBA003AC710 /* Build configuration list for PBXNativeTarget "BluetoothCharge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519B07AD1CE95EBA003AC710 /* Debug */,
+				519B07AE1CE95EBA003AC710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		519B07AF1CE95EBA003AC710 /* Build configuration list for PBXNativeTarget "BluetoothChargeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519B07B01CE95EBA003AC710 /* Debug */,
+				519B07B11CE95EBA003AC710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		519B07B21CE95EBA003AC710 /* Build configuration list for PBXNativeTarget "BluetoothChargeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				519B07B31CE95EBA003AC710 /* Debug */,
+				519B07B41CE95EBA003AC710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 519B07771CE95EBA003AC710 /* Project object */;
+}
