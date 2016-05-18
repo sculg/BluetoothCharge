@@ -30,7 +30,7 @@
     baby = [BabyBluetooth shareBabyBluetooth];
     [self babyDelegate];
     
-    _tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(20, 200, width-40, height-300) style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
