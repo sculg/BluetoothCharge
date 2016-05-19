@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PulsingHaloLayer.h"
 
 #define width [UIScreen mainScreen].bounds.size.width
 #define height [UIScreen mainScreen].bounds.size.height
@@ -16,27 +17,35 @@
     NSMutableArray *peripheralsAD;
     BabyBluetooth *baby;
 }
-@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic, strong) PulsingHaloLayer *halo;
+@property (nonatomic, strong) UIImageView *phoneImg;
+@property (nonatomic, strong) UITableView *tableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title=@"我";
     self.view.backgroundColor = [UIColor whiteColor];
     peripherals = [[NSMutableArray alloc]init];
     peripheralsAD = [[NSMutableArray alloc]init];
     
     baby = [BabyBluetooth shareBabyBluetooth];
     [self babyDelegate];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(setupInitialValues)
+                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
+    
+    
+    [self setupInitialValues];
     [self setUpUI];
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(20, 200, width-40, 265) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(20, 290, width-40, 265) style:UITableViewStylePlain];
     _tableView.backgroundColor = [UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1.0];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
-    
-   // [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(timerTask) userInfo:nil repeats:YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -44,16 +53,42 @@
     baby.scanForPeripherals().begin();
     
 }
+- (void)setupInitialValues {
+    [self.halo removeFromSuperlayer];
+    _phoneImg = [[UIImageView alloc]initWithFrame:CGRectMake(width*0.5-10, 130, 20, 40)];
+    _phoneImg.image =[UIImage imageNamed:@"Image"];
+    [self.view addSubview:_phoneImg];
+    PulsingHaloLayer *layer = [PulsingHaloLayer layer];
+    self.halo = layer;
+    [self.phoneImg.superview.layer insertSublayer:self.halo below:self.phoneImg.layer];
+    [self.halo start];
+    
+}
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    self.halo.haloLayerNumber = 10;
+    self.halo.radius = 79;
+    self.halo.animationDuration = 5;
+    UIColor *color = [UIColor colorWithRed:120.0/255
+                                     green:200.0/255
+                                      blue:120.0/255
+                                     alpha:1.0];
+    
+    [self.halo setBackgroundColor:color.CGColor];
+    self.halo.position = self.phoneImg.center;
+}
 -(void)setUpUI{
-    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(20, 150, width-40, 50)];
+    
+    
+    
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(20, 240, width-40, 50)];
     headerView.backgroundColor = [UIColor colorWithRed:235.0/255 green:235.0/255 blue:235.0/255 alpha:1.0];
     [self.view addSubview:headerView];
-    UILabel *headerText = [[UILabel alloc]initWithFrame:CGRectMake(20, 150, width-40, 50)];
+    UILabel *headerText = [[UILabel alloc]initWithFrame:CGRectMake(20, 240, width-40, 50)];
     headerText.textColor = [UIColor blackColor];
-    headerText.text =@"附近的蓝牙设备：";
+    headerText.text =@"搜索到附近的蓝牙设备：";
     [self.view addSubview:headerText];
-    
-    
 }
 -(void)babyDelegate{
     
@@ -108,14 +143,6 @@
     
     //设置查找设备的过滤器
     [baby setFilterOnDiscoverPeripherals:^BOOL(NSString *peripheralName, NSDictionary *advertisementData, NSNumber *RSSI) {
-        
-        //最常用的场景是查找某一个前缀开头的设备
-        //        if ([peripheralName hasPrefix:@"Pxxxx"] ) {
-        //            return YES;
-        //        }
-        //        return NO;
-        
-        //设置查找规则是名称大于0 ， the search rule is peripheral.name length > 0
         if (peripheralName.length >0) {
             return YES;
         }
@@ -152,16 +179,6 @@
 
 
 #pragma mark -Table委托 table delegate
-//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width-40, 30)];
-//    UILabel *text = [[UILabel alloc]init];
-//    text.text = @"附近的蓝牙设备：";
-//    [headerView addSubview:text];
-//    return headerView;
-//}
-//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-//    return 30;
-//}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 40;
 }
@@ -199,7 +216,9 @@
     return cell;
 }
 
-
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

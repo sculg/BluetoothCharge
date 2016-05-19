@@ -24,6 +24,7 @@
 		51A3F9781CEC42E600FAC754 /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F96D1CEC42E600FAC754 /* BabyToy.m */; };
 		51A3F9791CEC42E600FAC754 /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F96F1CEC42E600FAC754 /* BabyRhythm.m */; };
 		51A3F97A1CEC42E600FAC754 /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A3F9711CEC42E600FAC754 /* BabyOptions.m */; };
+		51A49B391CED6EE50066DFEB /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A49B381CED6EE50066DFEB /* PulsingHaloLayer.m */; };
 		B185FF2CBC4AC0C67E376441 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC498B709627CF73406B91B4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,8 @@
 		51A3F96F1CEC42E600FAC754 /* BabyRhythm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRhythm.m; sourceTree = "<group>"; };
 		51A3F9701CEC42E600FAC754 /* BabyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyOptions.h; sourceTree = "<group>"; };
 		51A3F9711CEC42E600FAC754 /* BabyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyOptions.m; sourceTree = "<group>"; };
+		51A49B371CED6EE50066DFEB /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		51A49B381CED6EE50066DFEB /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
 		E0C5141E4F941827CD30262C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FC498B709627CF73406B91B4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +148,8 @@
 		519B07811CE95EBA003AC710 /* BluetoothCharge */ = {
 			isa = PBXGroup;
 			children = (
+				51A49B371CED6EE50066DFEB /* PulsingHaloLayer.h */,
+				51A49B381CED6EE50066DFEB /* PulsingHaloLayer.m */,
 				519B07851CE95EBA003AC710 /* AppDelegate.h */,
 				519B07861CE95EBA003AC710 /* AppDelegate.m */,
 				519B07881CE95EBA003AC710 /* ViewController.h */,
@@ -412,6 +417,7 @@
 				519B078A1CE95EBA003AC710 /* ViewController.m in Sources */,
 				51A3F9771CEC42E600FAC754 /* BabySpeaker.m in Sources */,
 				519B07871CE95EBA003AC710 /* AppDelegate.m in Sources */,
+				51A49B391CED6EE50066DFEB /* PulsingHaloLayer.m in Sources */,
 				51A3F9761CEC42E600FAC754 /* BabyCallback.m in Sources */,
 				51A3F9751CEC42E600FAC754 /* BabyBluetooth.m in Sources */,
 				519B07841CE95EBA003AC710 /* main.m in Sources */,
