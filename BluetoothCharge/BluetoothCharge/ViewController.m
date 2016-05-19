@@ -32,7 +32,7 @@
     
     baby = [BabyBluetooth shareBabyBluetooth];
     [self babyDelegate];
-    
+    //扫描动画先挂起到恢复到前台时，动画会消失，暂时还没有找到解决办法。暂时通过注册一个通知解决，当进入前台时，移除之前动画，重新开启动画。
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(setupInitialValues)
                                                  name:UIApplicationDidBecomeActiveNotification object:nil];
