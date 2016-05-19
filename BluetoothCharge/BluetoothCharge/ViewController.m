@@ -23,14 +23,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     peripherals = [[NSMutableArray alloc]init];
     peripheralsAD = [[NSMutableArray alloc]init];
     
     baby = [BabyBluetooth shareBabyBluetooth];
     [self babyDelegate];
-    
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(21, 200, width-40, height-300) style:UITableViewStylePlain];
+    [self setUpUI];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(20, 200, width-40, 265) style:UITableViewStylePlain];
+    _tableView.backgroundColor = [UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1.0];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
@@ -43,7 +44,17 @@
     baby.scanForPeripherals().begin();
     
 }
-
+-(void)setUpUI{
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(20, 150, width-40, 50)];
+    headerView.backgroundColor = [UIColor colorWithRed:235.0/255 green:235.0/255 blue:235.0/255 alpha:1.0];
+    [self.view addSubview:headerView];
+    UILabel *headerText = [[UILabel alloc]initWithFrame:CGRectMake(20, 150, width-40, 50)];
+    headerText.textColor = [UIColor blackColor];
+    headerText.text =@"附近的蓝牙设备：";
+    [self.view addSubview:headerText];
+    
+    
+}
 -(void)babyDelegate{
     
     __weak typeof(self) weakSelf = self;
@@ -141,7 +152,19 @@
 
 
 #pragma mark -Table委托 table delegate
-
+//-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+//    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width-40, 30)];
+//    UILabel *text = [[UILabel alloc]init];
+//    text.text = @"附近的蓝牙设备：";
+//    [headerView addSubview:text];
+//    return headerView;
+//}
+//-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+//    return 30;
+//}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 40;
+}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return peripherals.count;
 }
@@ -172,6 +195,7 @@
     }else{
         cell.detailTextLabel.text = [NSString stringWithFormat:@"0 个service"];
     }
+    cell.backgroundColor = [UIColor colorWithRed:240.0/255 green:240.0/255 blue:240.0/255 alpha:1.0];
     return cell;
 }
 
