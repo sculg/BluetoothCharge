@@ -26,7 +26,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"我";
     self.view.backgroundColor = [UIColor whiteColor];
     peripherals = [[NSMutableArray alloc]init];
     peripheralsAD = [[NSMutableArray alloc]init];

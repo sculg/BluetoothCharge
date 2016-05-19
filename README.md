@@ -1,0 +1,2 @@
+# BluetoothCharge
+这是一个iOS蓝牙操作蓝牙充电桩项目，主要是在BabyBlutooth的基础上进行开发。
